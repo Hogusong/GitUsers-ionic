@@ -21,6 +21,16 @@ export class FeedPage {
     this.getUsers(this.startFrom);
   }
 
+  doInfinite(infiniteScroll) {
+    console.log('Begin async operation');
+    this.startFrom = this.users[this.users.length-1].id
+    setTimeout(() => {
+      this.getUsers(this.startFrom);
+      console.log('Async operation has ended');
+      infiniteScroll.complete();
+    }, 500);
+  }
+
   getUsers(startFrom) {
     this.feedService.getPosts(startFrom).subscribe(response => {
       const tempUsers = response;
