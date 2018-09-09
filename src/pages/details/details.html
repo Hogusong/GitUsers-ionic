@@ -50,7 +50,7 @@
             </ion-note>
           </ion-item>  
         </ion-list>
-        <a ion-button block target="_blank" href="{{user.blog}}">Visit the blog</a>
+        <a *ngIf="user.blog" ion-button block target="_blank" href="{{user.blog}}">Visit the blog</a>
       </ion-card-content>
     </ion-card>    
   </ion-content>

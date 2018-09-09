@@ -35,12 +35,12 @@ export class FeedPage {
     this.feedService.getPosts(startFrom).subscribe(response => {
       const tempUsers = response;
       console.log(response)
-      tempUsers.forEach(user => this.getUse(user.login));
+      tempUsers.forEach(user => this.getUser(user.login));
     })
     console.log(this.users)
   }
 
-  getUse(username) {
+  getUser(username) {
     this.feedService.getPost(username).subscribe(response => {
       this.users.push(response);
     });

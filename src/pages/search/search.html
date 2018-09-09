@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title>
+        Search
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-item>
+      <ion-label style="color: black">User's Name : </ion-label>
+      <ion-input value="{{username}}" placeholder="Enter user's name here" (ionChange)="onInput($event)"></ion-input>
+    </ion-item>
+    <ion-buttons>      
+      <button ion-button style="margin-left: 100px" (click)="getUser(username)">Search</button>
+      <button ion-button style="margin-left: 60px" (click)="clearUser()">Clear</button>
+    </ion-buttons>
+  </ion-content>
+  

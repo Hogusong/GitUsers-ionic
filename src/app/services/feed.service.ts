@@ -23,8 +23,9 @@ export class FeedService{
   getPost(username) {
     return this.http.get(this.baseUrl + "/" + username)
       .map(res => res.json())
-      .map(result => {
-        return result
-      })
+      .catch(error => JSON.stringify('error'))
+      // .map(result => {
+      //   return result
+      // })     
   }
 }
