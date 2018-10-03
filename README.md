@@ -6,21 +6,23 @@ to retrieve a list of github users and user's detail information.
 
 ## Copy Clone with HTTPS
 
-Move to the Root folder to create this project  
+Move to the Root folder to create this project.
 Run `git clone https://github.com/Hogusong/GitUsers-ionic.git`
 
 ## Install node modules
 
-Move to the project folder
+Move to the project folder.   
 Run `npm install`
 
 ## Development
 
-Run `ionic serve` for a dev server. Navigate to `http://localhost:8100/`. The app will automatically reload if you change any of the source files.
+Run `ionic serve` for a dev server. Navigate to `http://localhost:8100/`. 
+The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ionic build` to build the project. The build artifacts will be stored in the `www/` directory. Use the `--prod` flag for a production build.
+Run `ionic build` to build the project. The build artifacts will be stored in the `www/` directory. 
+Use the `--prod` flag for a production build.
 
 ## Further help
 
