@@ -13,7 +13,7 @@ export class FeedService{
   }
 
   getPosts(startFrom) {
-    return this.http.get(this.baseUrl + "?since=" + String(startFrom))
+    return this.http.get(this.baseUrl + "?since=" + String(startFrom)) 
       .map(res => res.json())
       .map(result => {
         return result
